@@ -1,0 +1,44 @@
+@include font-face(Montserrat-Regular, fonts/Montserrat-Regular);
+@include font-face(Montserrat-Bold, fonts/Montserrat-Bold);
+@include font-face(AvenirDemi, fonts/AvenirNextLTPro-Demi);
+@include font-face(AvenirIt, fonts/AvenirNextLTPro-It);
+@include font-face(AvenirRegular, fonts/AvenirNextLTPro-Regular);
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-family: "Monsterrat-Regular", sans-serif;
+}
+
+h1 {
+  font-size: 72px;
+  font-family: Montserrat-Bold,Arial,sans-serif;
+}
+
+h2 {
+  font-size: 60px;
+  font-family: Montserrat-Bold,Arial, sans-serif;
+}
+
+h3 {
+  font-size: 36px;
+  font-family: Montserrat-Regular,Arial, sans-serif;
+}
+
+h4 {
+  font-size: 23px;
+  font-family: Montserrat-Bold,Arial,sans-serif;
+}
+
+h5 {
+  font-size: 18px;
+  font-family: AvenirDemi,Arial,sans-serif;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  font-family: Montserrat-Regular,Arial, sans-serif;
+}

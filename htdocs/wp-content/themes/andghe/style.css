@@ -1,0 +1,1274 @@
+/*!
+ Theme Name: andghe
+ Theme URI: http://underscores.me/
+ Author: Andrei Ghervan
+ Author URI: http://www.andreighervan.ga/
+ Description: WordPress theme created by Andrei Ghrvan
+ Version: 1.0.0
+ License: GNU General Public License v2 or later
+ License URI: LICENSE
+ Text Domain: andghe
+ Tags:
+ This theme, like WordPress, is licensed under the GPL.
+ Use it to make something cool, have fun, and share what you've learned with others.
+ andghe is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+ Underscores is distributed under the terms of the GNU GPL v2 or later.
+ Normalizing styles have been helped along thanks to the fine work of
+ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+ */
+/*--------------------------------------------------------------
+ >>> TABLE OF CONTENTS:
+ ----------------------------------------------------------------
+ # Normalize
+ # Bootstrap
+ # Typography
+ # Elements
+ # Forms
+ # Navigation
+ ## Links
+ ## Menus
+ # Accessibility
+ # Alignments
+ # Clearings
+ # Widgets
+ # Content
+ ## Posts and pages
+ ## Comments
+ # Infinite scroll
+ # Media
+ ## Captions
+ ## Galleries
+ # Sections
+ # Media queries
+ --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+ # Normalize
+ --------------------------------------------------------------*/
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block;
+}
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden], template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active, a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b, strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button, select {
+  text-transform: none;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td, th {
+  padding: 0;
+}
+/*--------------------------------------------------------------
+ # Typography
+ --------------------------------------------------------------*/
+body, button, input, select, optgroup, textarea {
+  color: #404040;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("fonts/Montserrat-Regular.eot?") format("eot"), url("fonts/Montserrat-Regular.otf") format("opentype"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("fonts/Montserrat-Bold.eot?") format("eot"), url("fonts/Montserrat-Bold.otf") format("opentype"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+}
+@font-face {
+  font-family: "AvenirDemi";
+  src: url("fonts/AvenirNextLTPro-Demi.eot?") format("eot"), url("fonts/AvenirNextLTPro-Demi.otf") format("opentype"), url("fonts/AvenirNextLTPro-Demi.woff") format("woff"), url("fonts/AvenirNextLTPro-Demi.ttf") format("truetype"), url("fonts/AvenirNextLTPro-Demi.svg#AvenirDemi") format("svg");
+}
+@font-face {
+  font-family: "AvenirIt";
+  src: url("fonts/AvenirNextLTPro-It.eot?") format("eot"), url("fonts/AvenirNextLTPro-It.otf") format("opentype"), url("fonts/AvenirNextLTPro-It.woff") format("woff"), url("fonts/AvenirNextLTPro-It.ttf") format("truetype"), url("fonts/AvenirNextLTPro-It.svg#AvenirIt") format("svg");
+}
+@font-face {
+  font-family: "AvenirRegular";
+  src: url("fonts/AvenirNextLTPro-Regular.eot?") format("eot"), url("fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("fonts/AvenirNextLTPro-Regular.woff") format("woff"), url("fonts/AvenirNextLTPro-Regular.ttf") format("truetype"), url("fonts/AvenirNextLTPro-Regular.svg#AvenirRegular") format("svg");
+}
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-family: "Monsterrat-Regular", sans-serif;
+}
+h1 {
+  font-size: 72px;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+}
+h2 {
+  font-size: 60px;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+}
+h3 {
+  font-size: 36px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+}
+h4 {
+  font-size: 23px;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+}
+h5 {
+  font-size: 18px;
+  font-family: AvenirDemi, Arial, sans-serif;
+}
+h6 {
+  font-size: 16px;
+}
+p {
+  font-size: 14px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+}
+p {
+  margin-bottom: 1.5em;
+}
+dfn, cite, em, i {
+  font-style: italic;
+}
+blockquote {
+  margin: 0 1.5em;
+}
+address {
+  margin: 0 0 1.5em;
+}
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+big {
+  font-size: 125%;
+}
+/*--------------------------------------------------------------
+ # Elements
+ --------------------------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+body {
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */
+}
+blockquote, q {
+  quotes: "" "";
+}
+blockquote:before, q:before, blockquote:after, q:after {
+  content: "";
+}
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+ul, ol {
+  margin: 0 0 1.5em 3em;
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal;
+}
+li > ul, li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 1.5em 1.5em;
+}
+figure {
+  margin: 1em 0;
+  /* Extra wide images within figure tags don't overflow the content area. */
+}
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+/*--------------------------------------------------------------
+ # Forms
+ --------------------------------------------------------------*/
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+  color: rgba(0, 0, 0, .8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0.6em 1em 0.4em;
+}
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+  border-color: #ccc #bbb #aaa;
+}
+button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
+  border-color: #aaa #bbb #bbb;
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus {
+  color: #111;
+}
+select {
+  border: 1px solid #ccc;
+}
+textarea {
+  width: 100%;
+}
+/*--------------------------------------------------------------
+ # Navigation
+ --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+ ## Links
+ --------------------------------------------------------------*/
+a {
+  color: royalblue;
+}
+a:visited {
+  color: purple;
+}
+a:hover, a:focus, a:active {
+  color: midnightblue;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+/*--------------------------------------------------------------
+ ## Menus
+ --------------------------------------------------------------*/
+.nav-top > li > a {
+  color: #888;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  vertical-align: middle;
+  line-height: 18px;
+}
+.nav-top > li > a:hover {
+  color: #231f20;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  background: #fff url('img/header/border.png') no-repeat 10px 14px;
+}
+.nav > li > a {
+  padding: 22px 10px;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -ms-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+.navbar-brand {
+  margin: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+/*--------------------------------------------------------------
+ # Accessibility
+ --------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+/*--------------------------------------------------------------
+ # Alignments
+ --------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*--------------------------------------------------------------
+ # Clearings
+ --------------------------------------------------------------*/
+.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after {
+  clear: both;
+}
+/*--------------------------------------------------------------
+ # Widgets
+ --------------------------------------------------------------*/
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */
+}
+.widget select {
+  max-width: 100%;
+}
+/*--------------------------------------------------------------
+ # Content
+ --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+ ## Posts and pages
+ --------------------------------------------------------------*/
+.sticky {
+  display: block;
+}
+.hentry {
+  margin: 0 0 1.5em;
+}
+.byline, .updated:not(.published) {
+  display: none;
+}
+.single .byline, .group-blog .byline {
+  display: inline;
+}
+.page-content, .entry-content, .entry-summary {
+  margin: 1.5em 0 0;
+}
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+/*--------------------------------------------------------------
+ ## Comments
+ --------------------------------------------------------------*/
+.comment-content a {
+  word-wrap: break-word;
+}
+.bypostauthor {
+  display: block;
+}
+/*--------------------------------------------------------------
+ # Infinite scroll
+ --------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer {
+  /* Older / Newer Posts Navigation (always hidden) */
+  /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+/*--------------------------------------------------------------
+ # Media
+ --------------------------------------------------------------*/
+.page-content .wp-smiley, .entry-content .wp-smiley, .comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+/* Make sure embeds and iframes fit their containers. */
+embed, iframe, object {
+  max-width: 100%;
+}
+/*--------------------------------------------------------------
+ ## Captions
+ --------------------------------------------------------------*/
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+.wp-caption-text {
+  text-align: center;
+}
+/*--------------------------------------------------------------
+ ## Galleries
+ --------------------------------------------------------------*/
+.gallery {
+  margin-bottom: 1.5em;
+}
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+.gallery-caption {
+  display: block;
+}
+/*--------------------------------------------------------------
+ # Sections
+ --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+ ## Sections
+ --------------------------------------------------------------*/
+.container-2 {
+  padding: 0 51px;
+}
+/*---------------------------------------------*/
+/*---- TOP HEADER ----*/
+/*---------------------------------------------*/
+#top-header {
+  padding: 9px 0;
+  background-color: #1a1b20;
+  color: #484649;
+  font-size: 14px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+}
+/*---------------------------------------------*/
+/*---- HEADER ----*/
+/*---------------------------------------------*/
+header {
+  padding: 25px 0;
+}
+/*---------------------------------------------*/
+/*---- SLIDE ----*/
+/*---------------------------------------------*/
+/* Indicators images style */
+#slide .carousel-indicators span {
+  float: left;
+  height: 4px;
+  left: 0;
+  width: 35px;
+  display: block;
+}
+.item img {
+  height: 609px !important;
+}
+.carousel-caption {
+  text-align: left;
+  padding: 0;
+  position: absolute;
+  top: 210px;
+  left: 146px;
+}
+.carousel-caption p {
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  color: #888;
+  margin-bottom: 0;
+}
+.carousel-caption h1 {
+  color: #1a1b20;
+  line-height: 1;
+  margin-bottom: 32px;
+  margin-top: 18px;
+}
+.carousel-caption h5 {
+  color: #666766;
+  font-family: AvenirRegular, Arial, sans-serif;
+  line-height: 30px;
+}
+#myCarousel {
+  position: relative;
+}
+#myCarousel .carousel-indicators-numbers {
+  position: absolute;
+  left: 30px;
+  bottom: 45%;
+}
+.carousel-indicators-numbers li {
+  border: medium none;
+  border-radius: 0;
+  height: 20px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-top: 0;
+  width: 20px;
+  display: block;
+}
+.carousel-indicators-numbers li, .carousel-indicators-numbers li .active {
+  text-indent: 0;
+  margin: 15px 2px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  color: #1a1b20;
+  transition: all 0.25s ease;
+}
+.carousel-indicators .active {
+  margin-left: 40px;
+  margin-bottom: 20px !important;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Montserrat-Bold, Arial, sans-serif !important;
+}
+.carousel-indicators .active:before {
+  content: '/';
+  display: inline;
+  margin-left: -28px;
+  margin-right: 5px;
+  font-weight: normal;
+}
+.carousel-indicators-numbers {
+  margin: 0 2px;
+  width: 30px;
+  height: 30px;
+  color: #1a1b20;
+  font-size: 18px;
+  line-height: 62px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+}
+.carousel-indicators li {
+  margin: 0;
+}
+.slide-btn {
+  margin-top: 28px;
+}
+.slide-btn a {
+  font-size: 18px;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  line-height: 72px;
+  color: #1a1b20;
+}
+.down-arrow a {
+  position: absolute;
+  left: 50%;
+  top: 13px;
+  text-align: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  padding-left: 2px;
+  padding-top: 1px;
+  color: #8a8788;
+  background-color: #f0eeeb;
+}
+.down-arrow a i {
+  padding-top: 7px;
+}
+.fa-chevron-down {
+  text-align: center;
+}
+#after-slide button {
+  margin-top: 17px;
+  margin-bottom: 50px;
+  background-color: #0d79b8;
+  color: #fff;
+  font-family: AvenirDemi, Arial, sans-serif;
+  height: 35px;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+}
+.align-left {
+  float: left;
+}
+.align-right {
+  float: right;
+}
+.inline {
+  display: inline-block;
+}
+/*---------------------------------------------*/
+/*---- SERVICES ----*/
+/*---------------------------------------------*/
+.services {
+  background: #f6f6f6 url("img/background/services-background.png") top right no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.services-row {
+  padding-top: 4px;
+  padding-right: 0;
+  margin-left: 10px;
+}
+#services p {
+  color: #666766;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  margin-bottom: 66px;
+}
+#services h2 {
+  color: #1a1b20;
+  margin-bottom: 12px;
+}
+.p-services {
+  font-family: AvenirRegular, Arial, sans-serif;
+  width: 80%;
+  line-height: 30px;
+  font-size: 14px;
+}
+#services a {
+  color: #888;
+  font-size: 12px;
+  margin-right: 17px;
+  font-family: MontserratBold;
+}
+#services a:last-child {
+  margin-right: 0;
+}
+.see-all-services a h5, .see-gallery a h5 {
+  color: #1a1b20;
+}
+.services-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.see-all-services a h5 {
+  padding-top: 36px;
+  font-size: 18px;
+  font-family: Montserrat-Bold, Arial, sans-serif !important;
+}
+.recommended-item-control {
+  font-family: Montserrat-Regular, Arial, sans-serif !important;
+}
+#services-owl-carousel .item img {
+  margin-top: 0px;
+  width: 51px !important;
+}
+#services-owl-carousel .item {
+  position: relative;
+  text-align: center;
+  margin-right: 15px;
+  padding: 0 7px;
+  padding-top: 49px;
+  height: auto;
+  display: inline-block;
+  background: #fff;
+  -webkit-box-shadow: inset 0px -8px 5px 0px rgba(226, 226, 225, 1);
+  -moz-box-shadow: inset 0px -8px 5px 0px rgba(226, 226, 225, 1);
+  box-shadow: inset 0px -8px 5px 0px rgba(226, 226, 225, 1);
+}
+#services-owl-carousel .item h4 {
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  color: #1a1b20;
+  text-align: center;
+  line-height: 72px;
+  margin-bottom: -65px !important;
+}
+#services-owl-carousel .item p {
+  font-family: AvenirRegular, Arial, sans-serif;
+  color: #888;
+  line-height: 24px;
+}
+#services-owl-carousel .item button {
+  color: #fff;
+  font-family: Montserrat-Bold, Arial, sans-serif !important;
+  background: #0d79b8;
+  font-size: 14px;
+  border: none;
+  width: 100%;
+  height: 62px;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+#services-owl-carousel .item:hover button {
+  color: #fff;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  background: #0d79b8;
+  border: none;
+  width: 100%;
+  height: 44px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+}
+#services-owl-carousel .item img {
+  height: 50px !important;
+}
+/*---------------------------------------------*/
+/*---- CALL TO ACTION ----*/
+/*---------------------------------------------*/
+#we-are-ready {
+  text-align: center;
+  padding-top: 63px;
+  padding-bottom: 80px;
+}
+#we-are-ready button {
+  height: 44px;
+  width: 195px;
+  background: #0d79b8;
+  color: #fff;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  border: none;
+  font-size: 18px;
+}
+#we-are-ready h3 {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  line-height: 72px;
+  margin-bottom: 27px;
+  color: #1a1b20;
+}
+/*---------------------------------------------*/
+/*---- GALLERY ----*/
+/*---------------------------------------------*/
+.gallery {
+  background: url("img/background/gallery-background.png") top right no-repeat;
+  padding-top: 93px;
+  padding-bottom: 100px;
+  background-size: cover;
+  margin-bottom: 0;
+}
+#gallery h2 {
+  margin-bottom: 95px;
+}
+#gallery {
+  padding-bottom: 37px;
+}
+#gallery p {
+  margin-bottom: 58px;
+  color: #666766;
+}
+.tab-gallery li a {
+  font-family: Montserrat-Regular, Arial, sans-serif !important;
+  font-size: 14px;
+}
+.see-gallery a h5 {
+  padding-top: 30px;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  margin-bottom: 0;
+}
+.grid-block {
+  position: relative;
+}
+.navbar-header button {
+  background-color: gray;
+}
+.navbar-header button span {
+  background-color: black;
+}
+.nav-tabs {
+  margin-top: 100px;
+}
+.nav-tabs > li > a {
+  border: none;
+  border-bottom: 1px solid #f6f6f6;
+  background-color: transparent;
+  color: #29292d;
+  font-family: MontserratRegular;
+}
+/*.nav-tabs > li.active > a:first-child:after {*/
+.nav-tabs > li:not(:first-child):before {
+  content: '/';
+  display: inline-block;
+}
+.nav-tabs > li {
+  display: inline-block;
+}
+.nav li a {
+  display: inline-block;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border: none;
+  border-bottom: 1px solid #f6f6f6;
+  background-color: transparent;
+  color: #29292d;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+}
+.nav-tabs > li:hover, .nav-tabs > li:active {
+  border: none;
+  background-color: transparent;
+  color: #29292d;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+}
+.caption-1 {
+  display: none;
+  opacity: 0.5;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/gallery/trans-black-50.png');
+  width: 300px;
+  filter: alpha(opacity=50);
+  height: 320px;
+}
+.caption-1 i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 20px;
+  color: #e8e6e7;
+}
+.caption-2 {
+  display: none;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/gallery/trans-black-50.png');
+  width: 300px;
+  height: 420px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.caption-2 i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 20px;
+  color: #e8e6e7;
+}
+.grid-block {
+  position: relative;
+}
+.thumb {
+  position: relative;
+}
+.thumb div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(40, 41, 45, .7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.thumb img {
+  display: block;
+}
+.thumb div a i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 20px;
+  color: #e8e6e7;
+}
+.thumb:hover div {
+  opacity: 1;
+}
+.hidden {
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  background: red;
+}
+/* ---- grid ---- */
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* ---- grid-item ---- */
+.grid {
+  margin: 0 auto;
+}
+.grid-sizer, .grid-item {
+  width: 24.5%;
+  margin-right: 5px;
+}
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.4);
+}
+.grid-item {
+  height: 264px;
+  float: left;
+  margin-bottom: 6px;
+  padding-right: 6px;
+  overflow: hidden;
+}
+.grid-item--height2 {
+  height: 342px;
+  overflow: hidden;
+}
+/*---------------------------------------------*/
+/*---- CONTACT US ----*/
+/*---------------------------------------------*/
+.contact-us {
+  background: #1a1b20 url("img/background/contact-background.png") center center no-repeat;
+  padding: 100px 0;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.contact-us p {
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  -webkit-margin-after: 0 !important;
+  -webkit-margin-before: 0 !important;
+  padding: 0;
+  margin: 0;
+}
+.contact-us h2 {
+  margin-bottom: 43px;
+}
+.contact-us input {
+  width: 464px;
+  display: block;
+  padding-bottom: 14px;
+  margin: 0px auto !important;
+  background: transparent;
+  border: none;
+  color: #858585;
+  font-size: 18px;
+  font-family: AvenirDemi, Arial, sans-serif;
+  text-align: center;
+  border-bottom: 1px solid #858585;
+}
+input[type="tel"] {
+  margin-bottom: 16px;
+}
+.contact-us input[type="submit"] {
+  background: url("img/contactus/send-message.png") no-repeat;
+  border-bottom: none;
+  width: 230px;
+  margin-top: 30px !important;
+}
+/*---------------------------------------------*/
+/*---- TESTIMONIALS ----*/
+/*---------------------------------------------*/
+.author-image img {
+  height: 98px;
+  width: 98px !important;
+}
+#testimonials h4 {
+  color: #1a1b20;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  line-height: 72px;
+}
+#testimonials {
+  padding-bottom: 58px;
+  padding-top: 60px;
+}
+#testimonials p {
+  color: #666766;
+  font-family: AvenirIt, Arial, sas-serif;
+  line-height: 24px;
+  width: 98%;
+}
+.media-heading {
+  margin-bottom: 0 !important;
+}
+#testimonials h6 {
+  margin: 0 !important;
+}
+#testimonials h6 p {
+  font-family: AvenirRegular, Arial, sans-serif;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 0 !important;
+}
+.testimonial-left {
+  text-align: center;
+}
+/*---------------------------------------------*/
+/*---- FOOTER ----*/
+/*---------------------------------------------*/
+footer {
+  background: #1a1b20;
+  text-align: center;
+  padding-bottom: 66px;
+  padding-top: 92px;
+}
+footer h4 {
+  color: #fff;
+  font-family: AvenirDemi, Arial, sans-serif;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+footer i {
+  display: inline;
+  color: #2b2a2e;
+}
+i.fa-1 {
+  font-size: 30px;
+  margin-bottom: -20px;
+  margin-right: 5px;
+}
+.social i {
+  font-size: 21px;
+  padding-top: 21px;
+  margin-right: 14px;
+}
+/*--------------------------------------------------------------
+ # Media queries
+ --------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 45px !important;
+  }
+  #we-are-ready h3 {
+    font-size: 35px !important;
+    line-height: 30px !important;
+  }
+  .grid-sizer, .grid-item {
+    width: 48%;
+  }
+  .contact-us {
+    padding-left: 30%;
+  }
+  .contact-us input {
+    width: 100% !important;
+  }
+  #testimonials h4 {
+    line-height: 30px !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .nav-top > li > a {
+    padding: 5px 10px !important;
+  }
+  .nav-top > li > a:hover {
+    background: none !important;
+  }
+  .carousel-caption {
+    left: 90px !important;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 15px;
+  }
+  .carousel-caption h1 {
+    font-size: 35px !important;
+  }
+  #myCarousel .carousel-indicators-numbers {
+    left: 15px !important;
+  }
+  #we-are-ready h3 {
+    font-size: 25px !important;
+    line-height: 30px !important;
+  }
+  .thumb {
+    width: auto !important;
+  }
+  .gallery h2 {
+    margin-bottom: 35px !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #top-header {
+    font-size: 10px !important;
+  }
+  .nav-top > li > a {
+    padding: 5px 10px !important;
+  }
+  .nav-top > li > a:hover {
+    background: none !important;
+  }
+  .carousel-caption {
+    left: 90px !important;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 15px;
+  }
+  .carousel-caption h1 {
+    font-size: 25px !important;
+  }
+  #myCarousel .carousel-indicators-numbers {
+    left: 15px !important;
+  }
+  #we-are-ready h3 {
+    font-size: 22px !important;
+    line-height: 25px !important;
+  }
+  .thumb {
+    width: 100% !important;
+  }
+  .contact-us input {
+    width: 90%;
+  }
+  footer span {
+    display: block;
+  }
+}

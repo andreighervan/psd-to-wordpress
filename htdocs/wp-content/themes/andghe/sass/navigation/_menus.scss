@@ -1,0 +1,22 @@
+.nav-top > li > a {
+  color: #888888;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  vertical-align: middle;
+  line-height: 18px;
+  &:hover {
+    color: #231f20;
+    font-family: Montserrat-Regular, Arial, sans-serif;
+    background: #fff url('img/header/border.png') no-repeat 10px 14px;
+  }
+}
+.nav>li>a {
+  padding: 22px 10px;
+  @include transition(.2s all linear);
+}
+.navbar-brand {
+  margin: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+}

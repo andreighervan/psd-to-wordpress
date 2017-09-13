@@ -1,0 +1,115 @@
+//Desktop
+@media screen and (max-width: 1366px) {
+
+}
+
+//Tablet
+@media screen and (max-width: 768px) {
+  //Carousel
+  .carousel-caption h1{
+    font-size: 45px !important;
+  }
+  //CTA
+  #we-are-ready h3{
+    font-size: 35px !important;
+    line-height: 30px !important;
+  }
+  // Gallery
+  .grid-sizer,
+  .grid-item{
+    width: 48%;
+  }
+    // Contact us
+  .contact-us{
+   padding-left: 30%;
+  }
+  .contact-us input{
+    width: 100% !important;
+  }
+  // Testimonials
+  #testimonials h4{
+    line-height: 30px !important;
+  }
+}
+
+//Mobile
+@media screen and (max-width: 640px) {
+  //Menu
+  .nav-top > li > a{
+    padding: 5px 10px !important;
+  }
+  .nav-top > li > a:hover{
+    background: none !important;
+  }
+  //Carousel
+  .carousel-caption{
+    left:90px !important;
+    background: rgba(255,255,255,0.4);
+    padding: 15px;
+  }
+  .carousel-caption h1{
+    font-size: 35px !important;
+  }
+  #myCarousel .carousel-indicators-numbers{
+    left:15px !important;
+  }
+  //CTA
+  #we-are-ready h3{
+    font-size: 25px !important;
+    line-height: 30px !important;
+  }
+  // Gallery
+  .thumb{
+   width: auto !important;
+  }
+  .gallery h2 {
+    margin-bottom: 35px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+//top header
+  #top-header{
+    font-size: 10px !important;
+  }
+  //Menu
+  .nav-top > li > a{
+    padding: 5px 10px !important;
+  }
+  .nav-top > li > a:hover{
+    background: none !important;
+  }
+  //Carousel
+  .carousel-caption{
+    left:90px !important;
+    background: rgba(255,255,255,0.4);
+    padding: 15px;
+  }
+  .carousel-caption h1{
+    font-size: 25px !important;
+  }
+  #myCarousel .carousel-indicators-numbers{
+    left:15px !important;
+  }
+  //CTA
+  #we-are-ready h3{
+    font-size: 22px !important;
+    line-height: 25px !important;
+  }
+  // Gallery
+  .thumb{
+    width: 100% !important;
+  }
+  // Contact us
+  .contact-us input{
+    width: 90%;
+  }
+  // Footer
+  footer span{
+    display: block;
+  }
+}

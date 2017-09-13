@@ -1,0 +1,126 @@
+/*---------------------------------------------*/
+/*---- SERVICES ----*/
+/*---------------------------------------------*/
+
+.services {
+  background: #f6f6f6 url("img/background/services-background.png") top right no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.services-row {
+  padding-top: 4px;
+  padding-right: 0;
+  margin-left: 10px;
+}
+
+#services p {
+  color: #666766;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  margin-bottom: 66px;
+}
+
+#services h2 {
+  color: #1a1b20;
+  margin-bottom: 12px;
+}
+
+.p-services {
+  font-family: AvenirRegular, Arial, sans-serif;
+  width: 80%;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+#services a {
+  color: #888888;
+  font-size: 12px;
+  margin-right: 17px;
+  font-family: MontserratBold;
+}
+
+#services a:last-child {
+  margin-right: 0;
+}
+
+.see-all-services a h5, .see-gallery a h5 {
+  color: #1a1b20;
+}
+
+.services-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.see-all-services a h5{
+  padding-top: 36px;
+  font-size: 18px;
+  font-family: Montserrat-Bold, Arial, sans-serif !important;
+}
+
+.recommended-item-control{
+  font-family: Montserrat-Regular, Arial, sans-serif !important;
+}
+
+#services-owl-carousel .item img {
+  margin-top: 0px;
+  width: 51px !important;
+}
+
+#services-owl-carousel .item {
+  position: relative;
+  text-align: center;
+  margin-right: 15px;
+  padding: 0 7px;
+  padding-top: 49px;
+  height: auto;
+  display: inline-block;
+  background: #fff;
+  -webkit-box-shadow: inset 0px -8px 5px 0px rgba(226,226,225,1);
+  -moz-box-shadow: inset 0px -8px 5px 0px rgba(226,226,225,1);
+  box-shadow: inset 0px -8px 5px 0px rgba(226,226,225,1);
+}
+
+#services-owl-carousel .item h4 {
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  color: #1a1b20;
+  text-align: center;
+  line-height: 72px;
+  margin-bottom: -65px !important;
+}
+
+#services-owl-carousel .item p {
+  font-family: AvenirRegular, Arial, sans-serif;
+  color: #888888;
+  line-height: 24px;
+}
+
+#services-owl-carousel .item button {
+  color: #fff;
+  font-family: Montserrat-Bold, Arial, sans-serif !important;
+  background: #0d79b8;
+  font-size: 14px;
+  border: none;
+  width: 100%;
+  height: 62px;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+#services-owl-carousel .item:hover button {
+  color: #fff;
+  font-family: Montserrat-Bold, Arial,sans-serif;
+  background: #0d79b8;
+  border: none;
+  width: 100%;
+  height: 44px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+}
+#services-owl-carousel .item img{
+  height: 50px !important;
+}

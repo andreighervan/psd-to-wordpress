@@ -1,0 +1,48 @@
+/*---------------------------------------------*/
+/*---- CONTACT US ----*/
+/*---------------------------------------------*/
+
+.contact-us {
+  background: #1a1b20 url("img/background/contact-background.png") center center no-repeat;
+  padding: 100px 0;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-us p {
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  -webkit-margin-after: 0 !important;
+  -webkit-margin-before: 0 !important;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-us h2 {
+  margin-bottom: 43px;
+}
+
+.contact-us input {
+  width: 464px;
+  display: block;
+  padding-bottom: 14px;
+  margin: 0px auto !important;
+  background: transparent;
+  border: none;
+  color: #858585;
+  font-size: 18px;
+  font-family: AvenirDemi, Arial, sans-serif;
+  text-align: center;
+  border-bottom: 1px solid #858585;
+}
+
+input[type="tel"] {
+  margin-bottom: 16px;
+}
+
+.contact-us input[type="submit"] {
+  background: url("img/contactus/send-message.png") no-repeat;
+  border-bottom: none;
+  width: 230px;
+  margin-top: 30px !important;
+}

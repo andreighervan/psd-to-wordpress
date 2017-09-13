@@ -1,0 +1,41 @@
+/*---------------------------------------------*/
+/*---- TESTIMONIALS ----*/
+/*---------------------------------------------*/
+
+.author-image img {
+  height: 98px;
+  width: 98px !important;
+}
+
+#testimonials h4 {
+  color: #1a1b20;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  line-height: 72px;
+}
+
+#testimonials {
+  padding-bottom: 58px;
+  padding-top: 60px;
+  & p {
+    color: #666766;
+    font-family: AvenirIt, Arial, sas-serif;
+    line-height: 24px;
+    width: 98%;
+  }
+}
+  .media-heading {
+    margin-bottom: 0 !important;
+  }
+  #testimonials h6 {
+    margin: 0 !important;
+    & p {
+      font-family: AvenirRegular, Arial, sans-serif;
+      color: #333333;
+      font-size: 16px;
+      margin-bottom: 0 !important;
+    }
+  }
+.testimonial-left{
+  text-align: center;
+}
+
